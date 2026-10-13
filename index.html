@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinaturas de E-mail — CSC Veneza Equipamentos</title>
+  <style>
+    :root {
+      --primary: #367c2b; /* Verde John Deere */
+      --primary-dark: #27561f;
+      --accent: #ffde00; /* Amarelo John Deere */
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--border);
+    }
+    .badge {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    }
+    .card-header {
+      padding: 16px 24px;
+      background: #f1f5f9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-header h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .card-header .reg-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      background: #e8f5e9;
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+    .card-body {
+      padding: 24px;
+    }
+    .image-preview {
+      background: #fafafa;
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .image-preview img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .url-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .url-text {
+      font-family: monospace;
+      font-size: 13px;
+      color: #334155;
+      word-break: break-all;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+    .btn-secondary {
+      background: #e2e8f0;
+      color: var(--text);
+    }
+    .btn-secondary:hover {
+      background: #cbd5e1;
+    }
+    .links-bar {
+      margin-top: 16px;
+      display: flex;
+      gap: 10px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <span class="badge">CSC Veneza Equipamentos</span>
+      <h1>Assinaturas Oficiais dos Operadores de Regional</h1>
+      <p class="subtitle">Hospedagem pública de imagens de assinaturas para o Envio Mensal de Relatórios RDA</p>
+    </header>
+
+    <div class="grid">
+
+      <!-- R1: Oscar Rabelo -->
+      <article class="card" id="r1">
+        <div class="card-header">
+          <h2>Oscar Rabelo</h2>
+          <span class="reg-tag">Regional 1 — Recife / PE</span>
+        </div>
+        <div class="card-body">
+          <div class="image-preview">
+            <img src="oscar.jpg" alt="Assinatura Oscar Rabelo - R1">
+          </div>
+          <div class="url-box">
+            <span class="url-text" id="url-r1">oscar.jpg</span>
+            <button class="btn btn-secondary" onclick="copyUrl('oscar.jpg', this)">Copiar Link</button>
+          </div>
+          <div class="links-bar">
+            <a href="r1.html" class="btn btn-primary">Abrir Página Individual (R1)</a>
+            <a href="oscar.jpg" target="_blank" class="btn btn-secondary">Abrir Imagem Direta</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- R2: Eduardo Souza -->
+      <article class="card" id="r2">
+        <div class="card-header">
+          <h2>Eduardo Souza</h2>
+          <span class="reg-tag">Regional 2 — Bahia / BA</span>
+        </div>
+        <div class="card-body">
+          <div class="image-preview">
+            <img src="eduardo.jpg" alt="Assinatura Eduardo Souza - R2">
+          </div>
+          <div class="url-box">
+            <span class="url-text" id="url-r2">eduardo.jpg</span>
+            <button class="btn btn-secondary" onclick="copyUrl('eduardo.jpg', this)">Copiar Link</button>
+          </div>
+          <div class="links-bar">
+            <a href="r2.html" class="btn btn-primary">Abrir Página Individual (R2)</a>
+            <a href="eduardo.jpg" target="_blank" class="btn btn-secondary">Abrir Imagem Direta</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- R3: Luis Jucá -->
+      <article class="card" id="r3">
+        <div class="card-header">
+          <h2>Luis Jucá</h2>
+          <span class="reg-tag">Regional 3 — Fortaleza / CE</span>
+        </div>
+        <div class="card-body">
+          <div class="image-preview">
+            <img src="luis.jpg" alt="Assinatura Luis Jucá - R3">
+          </div>
+          <div class="url-box">
+            <span class="url-text" id="url-r3">luis.jpg</span>
+            <button class="btn btn-secondary" onclick="copyUrl('luis.jpg', this)">Copiar Link</button>
+          </div>
+          <div class="links-bar">
+            <a href="r3.html" class="btn btn-primary">Abrir Página Individual (R3)</a>
+            <a href="luis.jpg" target="_blank" class="btn btn-secondary">Abrir Imagem Direta</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <footer>
+      <p>Centro de Soluções Conectadas (CSC) — Veneza Equipamentos</p>
+      <p>Monorepo de automação e dados · Command Center</p>
+    </footer>
+  </div>
+
+  <script>
+    function copyUrl(path, btn) {
+      const fullUrl = new URL(path, window.location.href).href;
+      navigator.clipboard.writeText(fullUrl).then(() => {
+        const originalText = btn.innerText;
+        btn.innerText = "Copiado!";
+        setTimeout(() => { btn.innerText = originalText; }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
